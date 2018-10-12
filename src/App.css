@@ -1,32 +1,121 @@
-.App {
-  text-align: center;
+body {
+  --mdc-theme-primary: #f9a825;
+  --mdc-theme-secondary:#039be5
+
+  ;
+  width: 100%;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+.beli-button {
+  color: var(--mdc-theme-secondary,#6200ee) !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.beli-button:after, .beli-button:before {
+  background-color: var(--mdc-theme-secondary,#6200ee);
+}
+
+/*------------------header----------------*/
+/* .marging-top{
+margin-top: 48px;
+} */
+
+.top-bar{
+  background: var(--mdc-theme-primary, #f9a825);
+  color: #000000;
+  margin-top:-10%;
+  margin-left: -3%;
+}
+
+.title-style{
+  padding-top: 10%;
+  padding-left: 5%;
+}
+
+
+.content-center-row{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: start;
+
+}
+.conten-center-column{
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+}
+/*--------------------main-----------------*/
+.mdc-card {
+  width: 300px;
+  margin-top:2%;
 }
 
-.App-link {
-  color: #61dafb;
+.main-container{
+  margin: 32px 16px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (min-width: 600px) {
+  .about-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-left: 24px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .text-content {
+    width: 40%;
   }
 }
+
+.ima-size{
+  width: 300px;
+}
+.text-content{
+  text-align: justify
+}
+.text-padd-about{
+  padding: 3%;
+}
+.nav-content{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:flex-end;
+  margin-right: 50px;
+  margin-bottom: 24px;
+}
+.a-web{
+  color: #000000;
+  text-decoration:none;
+  padding: 8px;
+  margin-bottom: 16px;
+  border-radius: 5px;
+}
+a:hover{
+  background: #fafafa;
+  color: #000000;
+}
+.download-link{
+  text-decoration: none;
+  margin: 16px;
+  color:#039be5;
+}
+.github-link {
+  margin-left: 15px;
+}
+
+.li-conteiner{
+  border-bottom: solid 1px #bdbdbd;
+}
+
+.contact-container{
+  border: solid 1px #bdbdbd;
+  border-radius: 10px;
+}
+.contact-margin-text{
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
